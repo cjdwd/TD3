@@ -1,15 +1,10 @@
-# Twin Delayed DDPG (TD3) in PyTorch
-A relatively minimal PyTorch TD3 implementation from scratch. Heavily based on my other repo, [SAC-PyTorch](https://github.com/fiorenza2/SAC-PyTorch).
-
-## Implementation Details
-
-This code borrows the hyperparameters from [Scott Fujimoto's implementation](https://github.com/sfujim/TD3) but with one difference, which is that the network architecture is the same as the SAC paper (barring the additional output units for log-variance). This means there's an extra layer of 256 hidden units.
+# Developed DDPG in Pytorch
 
 ## Get Started
 
 Simply run:
 
-`python train_agent.py`
+`python train.py`
 
 for default args. Changeable args are:
 ```
@@ -23,8 +18,3 @@ for default args. Changeable args are:
 --save_model: Boolean that is true when used (saves model when GIFs are made, loading and running is left as an exercise for the reader (or until I get around to it))
 ```
 
-## Results
-
-Gets 14,000 on `HalfCheetah-v2` at 1.3 million samples. This is better than SAC!
-
-Full graphs TBA; computer died.
